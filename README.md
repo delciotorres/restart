@@ -44,6 +44,14 @@ Example2: Complete URI
 	book = api(book_uri).GET().json()
 
 
+Example3: Setting headers
+=========================
+
+	# set Referer
+	api = Api(API_BASE_URL, auth=(APP_ID, APP_SECRET), headers={'Referer': 'http://localhost:8000/index.html'})
+	api(book_uri).GET()
+
+
 License
 =======
 
